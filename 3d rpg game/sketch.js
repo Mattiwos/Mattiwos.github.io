@@ -8,13 +8,13 @@ var monster;
 
 function preload() {
   // Load model with normalise parameter set to true
-  airplane = loadModel('/bestplane.txt', true);
+  airplane = loadModel('/3d rpg game/bestplane.txt', true);
 
 
-  cow = loadModel('/cow.txt', true);
-  realcar = loadModel('/firstcar.txt', true);
+  cow = loadModel('/3d rpg game/cow.txt', true);
+  realcar = loadModel('/3d rpg game/firstcar.txt', true);
   //slot = loadModel('/teddy.txt', true);
-  car = loadModel('/car.txt', true);
+  car = loadModel('/3d rpg game/car.txt', true);
   //carwrap = loadModel('/sh3.txt', true)
 
   //monster = loadModel('/monster1.txt', true)
