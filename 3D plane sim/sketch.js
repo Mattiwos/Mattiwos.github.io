@@ -7,13 +7,13 @@ let carwrap
 var monster;
 function preload() {
   // Load model with normalise parameter set to true
-  airplane = loadModel('/bestplane.txt', true);
+  airplane = loadModel('/3D plane sim/bestplane.txt', true);
     
 
-  cow = loadModel('/cow.txt', true);
-  realcar = loadModel('/firstcar.txt', true);
+  cow = loadModel('/3D plane sim/cow.txt', true);
+  realcar = loadModel('/3D plane sim/firstcar.txt', true);
   //slot = loadModel('/teddy.txt', true);
-  car = loadModel('/car.txt', true);
+  car = loadModel('/3D plane sim/car.txt', true);
   //carwrap = loadModel('/sh3.txt', true)
   
   //monster = loadModel('/monster1.txt', true)
