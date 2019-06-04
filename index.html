@@ -4,90 +4,84 @@
 <title>MB Games Home Page</title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-   <style>
+<style>
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-.overlay {
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
+  padding-top: 60px;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
+.sidenav .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 
 
-
-
 </head>
 <body>
-<div id="myNav" class="overlay">
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
- 
+
+<div id="main">
+  
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-      
-      
-      
-      
       
       
       
