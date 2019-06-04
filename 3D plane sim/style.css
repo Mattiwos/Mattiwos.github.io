@@ -5,3 +5,10 @@ html, body {
 canvas {
   display: block;
 }
+h1{color:Olive;
+text-align: center;
+}
+h2{color:darkslategray;
+text-align: left;
+font size: 1
+}
