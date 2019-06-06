@@ -1,4 +1,4 @@
-html, body{
+html{
   margin: 0;
   padding: 0;
 }
@@ -60,6 +60,7 @@ $bg-height: 50px;
 
 /* Main styles */
 body {
+  font-family: "Lato", sans-serif;
   margin-top: 13.5rem;
   
   color: #999;
