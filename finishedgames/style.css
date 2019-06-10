@@ -1,11 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-image: url("https://i.ytimg.com/vi/4l6J5jhRgos/maxresdefault.jpg");
 }
 canvas {
   display: block;
+  
 }
 h1{
   text-align: center;
-
+  color: white;
 }
