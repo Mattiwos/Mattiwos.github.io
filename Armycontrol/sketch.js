@@ -3,7 +3,7 @@ myRec.continuous = true; // do continuous recognition
 myRec.interimResults = true; // allow partial recognition (faster, less accurate)
 
 function preload() {
-  var soldier = loadModel('army1.obj');
+  var soldier = loadModel('army1.txt');
 
 }
 
@@ -154,6 +154,7 @@ class player {
     this.cx = 0
     this.cy = 0
     this.speed = 1;
+    var soldier = loadModel('army1.txt');
 
   }
   display() {
@@ -177,7 +178,7 @@ class comander {
     this.x = 0
     this.y = 0
     this.z = 0
-
+    
   }
   display() {
 
